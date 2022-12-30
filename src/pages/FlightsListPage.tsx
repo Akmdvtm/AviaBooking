@@ -1,5 +1,5 @@
 import React from "react";
-import { Finder } from "../components/Finder";
+import {Finder} from "../components/Finder";
 import {Cart} from "../components/Carts/Cart";
 import {BucketCart} from "../components/Carts/BucketCart";
 
@@ -14,9 +14,6 @@ export function FlightsPage() {
         <div className="border min-w-finder border-slate-300 rounded-lg">
           <ol className="mx-6 my-4">
             <Cart/>
-              <Cart/>
-              <Cart/>
-              <Cart/>
           </ol>
         </div>
           <div className="max-w-backet block border border-slate-300 rounded-lg">
