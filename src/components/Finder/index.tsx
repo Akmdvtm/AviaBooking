@@ -1,7 +1,10 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, {useState} from "react";
+import {Link} from "react-router-dom";
+// import {DatePicker} from "./DatePicker";
 
 export function Finder() {
+    const [datePicker, setDatePicker] = useState<string>('text')
+
   return (
     <div className="flex justify-center shadow-xl">
       <div>
@@ -38,8 +41,9 @@ export function Finder() {
         ></img>
         <input
           className="placeholder:text-slate-400 block bg-white w-full border border-slate-300 h-full pl-10"
-          placeholder="Depart - Return"
-          type="text"
+          placeholder="Depart"
+          onClick={() => setDatePicker('date')}
+          type={datePicker}
           name="date"
         />
       </div>
